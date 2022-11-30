@@ -1,0 +1,26 @@
+@mixin completo {
+    height: auto;
+    width: 100%;
+}
+div.gallery {
+    margin: 5px;
+    width: 180px;
+    transition: width 2s;
+    padding-left: 25px;
+        &:hover{
+            width: 200px;
+        }
+        img {
+            @include completo;
+        }
+}  
+footer { 
+    @include completo;
+    text-align: center;
+    margin-top: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
